@@ -1,7 +1,7 @@
-const express = require("express")
-
-const{helloWorld} = require("../controllers/movies")
-
-router = express.Router()
-router.get("/", helloWorld)
-module.exports = router
+const helloWorld = (req, res)=>{
+    res.send("hello world!")
+    res.end()
+}
+module.exports = {
+    helloWorld
+}
